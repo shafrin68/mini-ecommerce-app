@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Mini Shop</h1>
+        <p>Your Everyday Shopping Store</p>
+    </header>
+
+    <main class="container">
+
+        <section class="products-section">
+            <h2>Our Products</h2>
+            <div id="products" class="products-grid"></div>
+        </section>
+
+        <section class="cart-section">
+            <h2>🛒 Shopping Cart</h2>
+
+            <p id="empty-message">Your cart is empty.</p>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-summary">
+                <p>Subtotal: <span id="subtotal">₹0</span></p>
+                <p>Delivery: <span id="delivery">₹0</span></p>
+                <h3>Total: <span id="total">₹0</span></h3>
+
+                <button id="checkout-btn" disabled>
+                    Proceed to Checkout
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <dialog id="checkout-dialog">
+        <div class="dialog-content">
+            <h2>Order Summary</h2>
+            <p id="checkout-message"></p>
+            <p id="checkout-total"></p>
+            <p class="demo-note">
+                This is a demo checkout. No payment will be taken.
+            </p>
+            <button id="close-dialog">Close</button>
+        </div>
+    </dialog>
+
+    <footer>
+        <p>Mini Shop | Demo E-Commerce Project</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
